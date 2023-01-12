@@ -1,1 +1,11 @@
-{{yield}}
+<div
+  class='au-c-toolbar
+    {{this.reverse}}
+    {{this.border}}
+    {{this.skin}}
+    {{this.size}}
+    {{this.nowrap}}'
+  ...attributes
+>
+  {{yield (component 'au-toolbar/group')}}
+</div>
